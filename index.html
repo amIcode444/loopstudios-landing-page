@@ -1,59 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Loopstudios landing page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  About
-  Careers
-  Events
-  Products
-  Support
+    <title>Frontend Mentor | Loopstudios landing page</title>
 
-  Immersive experiences that deliver
+    <link rel="stylesheet" href="css/reset.css" />
 
-  The leader in interactive VR
+    <link rel="stylesheet" href="css/style.css" />
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <!-- Logo -->
+        <div>
+          <a href="#">
+            <img src="images/logo.svg" alt="" />
+          </a>
+          <!-- Nav Links -->
+          <nav>
+            <ul class="desk">
+              <li><a href="#">links</a></li>
+              <li><a href="#">links</a></li>
+              <li><a href="#">links</a></li>
+              <li><a href="#">links</a></li>
+              <li><a href="#">links</a></li>
+            </ul>
+            <ul class="mobile">
+              <li><a href="#">links</a></li>
+              <li><a href="#">links</a></li>
+              <li><a href="#">links</a></li>
+              <li><a href="#">links</a></li>
+              <li><a href="#">links</a></li>
+            </ul>
+            <div class="humburger">
+              <img src="images/icon-hamburger.svg" alt="" />
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-  Our creations
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>
+            About Careers Events Products Support Immersive experiences that
+            deliver
+          </h1>
+        </div>
+      </section>
+      <section class="leader">
+        <div class="container">
+          <div class="leader__content">
+            <h2>The leader in interactive VR</h2>
+            <p>
+              Founded in 2011, Loopstudios has been producing world-class
+              virtual reality projects for some of the best companies around the
+              globe. Our award-winning creations have transformed businesses
+              through digital experiences that bind to their brand.
+            </p>
+          </div>
+          <picture>
+            <source
+              media="(min-width: 375px)"
+              srcset="images/mobile/image-interactive.jpg"
+            />
+            <!-- <source media="(max-width: 465px)" srcset="img_car.jpg"> -->
+            <img src="images/desktop/image-interactive.jpg" />
+          </picture>
+        </div>
+      </section>
+      <section class="creation">
+        <div class="container">
+          <div class="">
+            <h2>Our creations</h2>
+            <div class="creations__btn">
+              <a href="#">See all</a>
+            </div>
+          </div>
+          <div class="creation__gallery">
+            <div class="creation__card">
+              <picture>
+                <source
+                  media="(max-width: 575px)"
+                  srcset="images/mobile/image-deep-earth.jpg"
+                />
+                <!-- <source media="(max-width: 465px)" srcset="img_car.jpg"> -->
+                <img src="images/desktop/image-deep-earth.jpg" />
+              </picture>
+              <div class="creation__cardcontent">
+                <h3>Deep earth</h3>
+              </div>
+            </div>
+            <div class="creation__card">
+              <picture>
+                <source
+                  media="(max-width: 575px)"
+                  srcset="images/mobile/image-night-arcade.jpg"
+                />
+                <!-- <source media="(max-width: 465px)" srcset="img_car.jpg"> -->
+                <img src="images/desktop/image-night-arcade.jpg" />
+              </picture>
+              <div class="creation__cardcontent">
+                <h3>Night arcade</h3>
+              </div>
+            </div>
+            <div class="creation__card">
+              <picture>
+                <source
+                  media="(max-width: 575px)"
+                  srcset="images/mobile/image-soccer-team.jpg"
+                />
+                <!-- <source media="(max-width: 465px)" srcset="img_car.jpg"> -->
+                <img src="images/desktop/image-soccer-team.jpg" />
+              </picture>
+              <div class="creation__cardcontent">
+                <h3>Soccer team VR</h3>
+              </div>
+            </div>
+            <div class="creation__card">
+              <picture>
+                <source
+                  media="(max-width: 575px)"
+                  srcset="images/mobile/image-grid.jpg"
+                />
+                <!-- <source media="(max-width: 465px)" srcset="img_car.jpg"> -->
+                <img src="images/desktop/image-grid.jpg" />
+              </picture>
+              <div class="creation__cardcontent">
+                <h3>The grid</h3>
+              </div>
+            </div>
+            <div class="creation__card">
+              <picture>
+                <source
+                  media="(max-width: 575px)"
+                  srcset="images/mobile/image-from-above.jpg"
+                />
+                <!-- <source media="(max-width: 465px)" srcset="img_car.jpg"> -->
+                <img src="images/desktop/image-from-above.jpg" />
+              </picture>
+              <div class="creation__cardcontent">
+                <h3>From up above vr</h3>
+              </div>
+            </div>
+            <div class="creation__card">
+              <picture>
+                <source
+                  media="(max-width: 575px)"
+                  srcset="images/mobile/image-pocket-borealis.jpg"
+                />
+                <!-- <source media="(max-width: 465px)" srcset="img_car.jpg"> -->
+                <img src="images/desktop/image-pocket-borealis.jpg" />
+              </picture>
+              <div class="creation__cardcontent">
+                <h3>Pocket borealis</h3>
+              </div>
+            </div>
+            <div class="creation__card">
+              <picture>
+                <source
+                  media="(max-width: 575px)"
+                  srcset="images/mobile/image-curiosity.jpg"
+                />
+                <!-- <source media="(max-width: 465px)" srcset="img_car.jpg"> -->
+                <img src="images/desktop/image-curiosity.jpg" />
+              </picture>
+              <div class="creation__cardcontent">
+                <h3>The curiosity</h3>
+              </div>
+            </div>
+            <div class="creation__card">
+              <picture>
+                <source
+                  media="(max-width: 575px)"
+                  srcset="images/mobile/image-fisheye.jpg"
+                />
+                <!-- <source media="(max-width: 465px)" srcset="img_car.jpg"> -->
+                <img src="images/desktop/image-fisheye.jpg" />
+              </picture>
+              <div class="creation__cardcontent">
+                <h3>Make it fisheye</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  See all
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__left">
+          <a href="#">
+            <img src="images/logo.svg" alt="" />
+          </a>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer__right">
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><img src="images/icon-facebook.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/icon-twitter.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/icon-pinterest.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/icon-instagram.svg" alt="" /></a>
+            </li>
+          </ul>
+          <p>© 2021 Loopstudios. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
 
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  © 2021 Loopstudios. All rights reserved.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>

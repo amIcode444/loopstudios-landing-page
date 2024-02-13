@@ -1,0 +1,37 @@
+/* ==================== FONTS ==================== */
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* ==================== VARIABLES ===================== */
+:root {
+  --ff-alata: 'Alata', sans-serif;
+  --ff-josefin: 'Josefin Sans', sans-serif;
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+  --clr-dark-gray: hsl(0, 0%, 55%);
+  --clr-very-dark-gray: hsl(0, 0%, 41%);
+}
+
+body {
+  background-color: var(--clr-dark-gray);
+  font-family: var(--ff-alata);
+  font-size: 15px;
+  min-height: 100dvh;
+}
+
+picture,
+svg,
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: var(--clr-white);
+  font-family: inherit;
+}
+
+.container {
+  margin-inline: auto;
+  max-width: 1440px;
+  padding: 0 15px;
+}
